@@ -1,0 +1,45 @@
+
+ESC -> exit
+arrow keys -> move camera
+pg up / pg down -> advance / go back
+Home -> default location
+
+a -> rotate object left (Y)
+d -> rotate object right (-Y)
+d -> rotate object down (X)
+x -> move object up (-X)
+q/Q -> spin object left/right
+i/I -> move object along local X (-X)
+o/O -> move object along local Y (-Y)
+p/P -> move object along local Z (-Z)
+
+f -> increase fovy (zoom in)
+F -> decrease fovy (zoom out)
+l -> set lights
+L -> disable lights
+s -> enable shading
+S -> disable shading
+z -> enable z-buffer
+Z -> disable z-buffer
+. -> change walk/fly
+
+0 -> animate
+1 .. 7 -> switch light on/off
+
+alt-c -> print camera
+alt-i -> print registered images
+alt-l -> print registered lights
+alt-m -> print registered materials
+alt-t -> print registered textures
+alt-p -> print projection trfm
+alt-s -> print renderState
+alt-S -> print shaders
+alt-v -> print modelview trfm
+alt-b -> draw BBox-es
+alt-a -> toggle line aliasing on/off
+alt-C -> go through objects
+alt-f -> change to/from cull camera
+alt-0 -> take snapshot
+alt-1 -> go to parent node
+alt-2 -> go to first child node
+alt-3 -> go to next sibling

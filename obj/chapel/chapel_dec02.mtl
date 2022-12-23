@@ -1,0 +1,13 @@
+# Blender MTL File: 'chapel_dec02.blend'
+# Material Count: 1
+newmtl mat:cubemap_chapel.cubicmap
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.358400 0.358400 0.358400
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd chapel-cubicmap.jpg
+
+

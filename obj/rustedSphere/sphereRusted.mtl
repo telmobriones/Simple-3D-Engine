@@ -1,0 +1,12 @@
+# Blender MTL File: 'None'
+# Material Count: 1
+
+newmtl Material.001
+Ns 496.676385
+Ka 1.000000 1.000000 1.000000
+Kd 0.706125 0.706125 0.706125
+Ks 0.654167 0.654167 0.654167
+Ke 0.000000 0.000000 0.000000
+d 1.000000
+illum 2
+map_Bump normal.png

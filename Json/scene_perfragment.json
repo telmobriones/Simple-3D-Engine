@@ -1,0 +1,156 @@
+{
+	"global" : {
+		"ambient" : [ 0.05, 0.05, 0.05 ]
+	},
+    "gObjects" : [
+        {
+            "fname" : "solid.obj",
+            "dirname" : "./obj/spheres/"
+        },
+        {
+            "fname" : "smooth.obj",
+            "dirname" : "./obj/spheres/"
+        },
+        {
+            "fname" : "chapel.obj",
+            "dirname" : "./obj/chapel/"
+        },
+        {
+            "fname" : "cubo.obj",
+            "dirname" : "./obj/cubes/"
+        },
+        {
+            "fname" : "cubotex.obj",
+            "dirname" : "./obj/cubes/"
+        },
+        {
+            "fname" : "floor.obj",
+            "dirname" : "./obj/floor/"
+        }
+    ],
+    "cameras" : [
+        {
+            "name" : "mainCamera",
+            "type" : "perspective",
+            "fovy" : 0.524,
+            "aspect" : 1.0,
+            "near" : 0.1,
+            "far" : 2500.0,
+            "pos" : [0, 0, 0],
+            "lookAt" : [0, 0, -1],
+            "up" : [0, 1, 0]
+        },
+        {
+            "name" : "camera2",
+            "type" : "perspective",
+            "fovy" : 0.524,
+            "aspect" : 1.0,
+            "near" : 0.1,
+            "far" : 2500.0,
+            "pos" : [0, 100, 0],
+            "lookAt" : [0, 0, 0],
+            "up" : [0, 0, -1]
+        }
+    ],
+    "avatars" : [
+        {
+            "name" : "avatar",
+            "camera" : "mainCamera",
+            "radius" : 1.0
+        }
+    ],
+    "shaders" : [
+        {
+            "name" : "dummy",
+            "vshader" : "Shaders/dummy.vert",
+            "fshader" : "Shaders/dummy.frag"
+        },
+        {
+            "name" : "pervertex",
+            "vshader" : "Shaders/pervertex.vert",
+            "fshader" : "Shaders/pervertex.frag"
+        },
+        {
+            "name" : "perfragment",
+            "vshader" : "Shaders/perfragment.vert",
+            "fshader" : "Shaders/perfragment.frag"
+        },
+        {
+            "name" : "bump",
+            "vshader" : "Shaders/bump_shader.vert",
+            "fshader" : "Shaders/bump_shader.frag",
+			"uniforms" : [ {"name" : "bumpmap", "type" : "usampler"} ],
+			"capabilities" : [ "bump" ]
+        }
+    ],
+    "lights" : [
+        {
+            "name" : "mainlight",
+            "type" : "positional",
+            "pos" : [-10, -4, -100],
+            "dif" : [0.5, 0.5, 0.5],
+            "spec" : [0.6, 0.6, 0.6],
+            "switched" : 1
+        },
+        {
+            "name" : "dirlight",
+            "type" : "directional",
+            "pos" : [-1, -1, -1],
+            "dif" : [0.7, 0.7, 0.7],
+            "spec" : [0.6, 0.6, 0.6],
+            "switched" : 0
+        },
+        {
+            "name" : "dirlight2",
+            "type" : "directional",
+            "pos" : [1, 1, 1],
+            "dif" : [0.7, 0.7, 0.7],
+            "spec" : [0.6, 0.6, 0.6],
+            "switched" : 0
+        },
+        {
+            "name" : "spot1",
+            "type" : "spotlight",
+            "pos" : [0, 10, 0],
+            "dif" : [0.5, 0.5, 0.5],
+            "spec" : [0.6, 0.6, 0.6],
+            "spdir" : [0, 0, -1],
+            "exp" : 40,
+            "cutoff" : 10.0,
+            "attenuation" : [0.0, 0.0, 0.0],
+            "switched" : 0
+        }
+    ],
+    "node" : {
+        "name" : "root",
+        "trfm" : [ { "trans" : [0, -10, -100] } ],
+        "shader" : "perfragment",
+        "children" : [
+            {
+                "name" : "smooth",
+                "gObj" : "./obj/spheres/smooth.obj",
+                "trfm" : [ { "trans" : [-20, 0, 0] } ]
+            },
+            {
+                "name" : "chapel",
+                "gObj" : "./obj/chapel/chapel.obj",
+                "trfm" : [ { "trans" : [20, 0, 0] } ]
+            },
+            {
+                "name" : "cubo",
+                "gObj" : "./obj/cubes/cubo.obj",
+                "trfm" : [ { "trans" : [0, 0, -20] } ]
+            },
+            {
+                "name" : "cubotex",
+                "gObj" : "./obj/cubes/cubotex.obj",
+                "trfm" : [ { "trans" : [0, 0, 20] } ]
+            },
+            {
+                "name" : "floor",
+                "gObj" : "./obj/floor/floor.obj",
+                "trfm" : [ { "trans" : [0, -10, 0] } ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,78 @@
+# Blender3D MTL File: 
+# Material Count: 7
+newmtl Material__5_Crimson_Wirecut_Irons
+Ns 5.882353
+Ka 0.000000 0.000000 0.000000
+Kd 0.398431 0.078431 0.000000
+Ks 0.024902 0.004902 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Crimson_Wirecut_Ironspot.jpg
+
+
+newmtl Material__6_finery_white.bmp
+Ns 5.882353
+Ka 0.000000 0.000000 0.000000
+Kd 0.398431 0.078431 0.000000
+Ks 0.024902 0.004902 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd finery_white.bmp
+
+
+newmtl Material__7_ventana.jpg
+Ns 5.882353
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.050000 0.050000 0.050000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd ventana.jpg
+
+
+newmtl Material__3
+Ns 5.882353
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.050000 0.050000 0.050000
+Ni 1.000000
+d 1.000000
+illum 2
+
+
+newmtl Material__4_ladrillo2.jpg
+Ns 5.882353
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.050000 0.050000 0.050000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd ladrillo2.jpg
+
+
+newmtl Material__1_door.jpg
+Ns 5.882353
+Ka 0.000000 0.000000 0.000000
+Kd 0.398431 0.078431 0.000000
+Ks 0.024902 0.004902 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd puerta2.jpg
+
+
+newmtl Material__2_muro.jpg
+Ns 5.882353
+Ka 0.000000 0.000000 0.000000
+Kd 0.398431 0.078431 0.000000
+Ks 0.024902 0.004902 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd muro2.jpg
+
+

@@ -1,0 +1,13 @@
+# Blender MTL File: 'water.blend'
+# Material Count: 1
+
+newmtl Material.003
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.193986 0.8 0
+Ks 0.200935 0.200935 0.200935
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd waternmap.jpg
+map_Bump waternmap.jpg

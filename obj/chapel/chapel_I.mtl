@@ -1,0 +1,13 @@
+# Blender MTL File: ''
+# Material Count: 1
+newmtl Chapel01_M_chapel.jpg_chapel.jpg_chapel.jpg.001_chapel.jpg.001
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.286720 0.286720 0.286720
+Ks 0.225000 0.225000 0.225000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd chapel.jpg
+
+
