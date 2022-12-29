@@ -1,37 +1,37 @@
 # Simple-3D-Engine
-This project is a basic 3D engine that uses scene graph data structures and the OpenGL pipeline. It includes a number of features such as frustum culling, bump mapping, specular mapping, cube mapping and multitexturing. The engine also supports different types of lights (local, directional, and spotlight) that are calculated using the Blinn–Phong reflection model, as well as lighting provided by the Cook-Torrance BRDF microfacet model. All of these features are implemented as shaders in the shader folder.
+
+This project is a basic 3D engine that utilizes scene graph data structures and the OpenGL rendering pipeline. It features frustum culling, bump mapping, specular mapping, cube mapping, and multitexturing. The engine also supports local, directional, and spotlight lighting calculated using the Blinn-Phong reflection model, as well as lighting provided by the Cook-Torrance BRDF microfacet model. Most of these features are implemented as shaders in the shader folder.
 
 # How to run it
 
 1) You need the following packages for installing this:
-- freeglut3-dev
-- libglew-dev
+    - freeglut3-dev
+    - libglew-dev
 
-The following command would do in on an Ubuntu system:
+    The following command would do in on an Ubuntu system:
 
-% sudo apt-get install freeglut3-dev libglew-dev
+    % sudo apt-get install freeglut3-dev libglew-dev
 
 2) Build the project using CMAKE
 
-Run this *only once*
+    Run this *only once*
 
-% cmake CMakeLists.txt
+    % cmake CMakeLists.txt
 
-Then, build tha project with:
+    Then, build the project with:
 
-% make
+    % make
 
 3) Run the project:
 
-% ./browser
+    % ./browser
 
 4) Sometimes you have to uncomment this line in Browser/browser.c (around line
    446):
 
   // Uncomment following line if you have problems initiating GLEW
-  //
--  // glewExperimental = GL_TRUE;
-+  glewExperimental = GL_TRUE;
+    -  // glewExperimental = GL_TRUE;
+    +  glewExperimental = GL_TRUE;
 
 
 # Controls
